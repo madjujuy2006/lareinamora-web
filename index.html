@@ -4,76 +4,119 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homestay La Reinamora</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header { background: #88c0d0; color: white; padding: 20px 10px; text-align: center; }
-    nav { background: #5e81ac; color: white; text-align: center; padding: 10px 0; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; }
-    section { padding: 20px; }
-    .gallery img { width: 100%; max-width: 300px; margin: 10px; border-radius: 10px; }
-    .map-container { text-align: center; margin-top: 20px; }
-    footer { background: #4c566a; color: white; text-align: center; padding: 15px 10px; }
-    .contact-form input, .contact-form textarea {
-      width: 100%; max-width: 500px; padding: 10px; margin: 10px 0; border: 1px solid #ccc;
-    }
-    .contact-form button { padding: 10px 20px; background: #5e81ac; color: white; border: none; cursor: pointer; }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header>
-    <h1>Homestay La Reinamora Monoambientes</h1>
-    <p>Tu estadía cómoda y tranquila en San Salvador de Jujuy</p>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-700">Homestay La Reinamora</h1>
+      <nav class="space-x-4">
+        <a href="#galeria" class="text-gray-600 hover:text-blue-600">Galería</a>
+        <a href="#precios" class="text-gray-600 hover:text-blue-600">Precios</a>
+        <a href="#ubicacion" class="text-gray-600 hover:text-blue-600">Ubicación</a>
+        <a href="#contacto" class="text-gray-600 hover:text-blue-600">Contacto</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#galeria">Galería</a>
-    <a href="#precios">Precios</a>
-    <a href="#ubicacion">Ubicación</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-
-  <section id="sobre">
-    <h2>Sobre el alojamiento</h2>
-    <p>Ofrecemos monoambientes completamente equipados, ideales para estadías cortas o largas en una zona tranquila de San Salvador de Jujuy. Cada unidad cuenta con cocina, baño privado, Wi-Fi y aire acondicionado.</p>
-  </section>
-
-  <section id="galeria">
-    <h2>Galería de fotos</h2>
-    <div class="gallery">
-      <!-- Aquí puedes insertar tus imágenes -->
-      <img src="foto1.jpg" alt="Monoambiente 1">
-      <img src="foto2.jpg" alt="Monoambiente 2">
-      <img src="foto3.jpg" alt="Entrada al alojamiento">
+  <!-- Hero Section -->
+  <section class="bg-blue-100 py-12">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Tu lugar de descanso en San Salvador de Jujuy</h2>
+      <p class="text-lg mb-6">Monoambientes cómodos y totalmente equipados para tu estadía.</p>
+      <a href="#contacto" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">Reservar Ahora</a>
     </div>
   </section>
 
-  <section id="precios">
-    <h2>Precios</h2>
-    <p>Desde $10.000 por noche. Tarifas semanales y mensuales disponibles. Consultar por promociones especiales y fechas disponibles.</p>
-  </section>
-
-  <section id="ubicacion">
-    <h2>Ubicación</h2>
-    <p>Estamos en Calle La Reinamora 460, San Salvador de Jujuy.</p>
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps?q=-24.183,-65.299&z=15&output=embed" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <!-- Galería de Fotos -->
+  <section id="galeria" class="py-12 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6 text-center">Galería de Fotos</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="https://via.placeholder.com/400x300?text=Monoambiente+1" alt="Monoambiente 1" class="rounded-lg shadow">
+        <img src="https://via.placeholder.com/400x300?text=Monoambiente+2" alt="Monoambiente 2" class="rounded-lg shadow">
+        <img src="https://via.placeholder.com/400x300?text=Ba%C3%B1o" alt="Baño" class="rounded-lg shadow">
+        <img src="https://via.placeholder.com/400x300?text=Cocina" alt="Cocina" class="rounded-lg shadow">
+        <img src="https://via.placeholder.com/400x300?text=Fachada" alt="Fachada" class="rounded-lg shadow">
+        <img src="https://via.placeholder.com/400x300?text=Vista+exterior" alt="Vista exterior" class="rounded-lg shadow">
+      </div>
     </div>
   </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Nombre" required>
-      <input type="email" placeholder="Correo electrónico" required>
-      <textarea placeholder="Mensaje" rows="4" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <p>O escribinos por WhatsApp: <strong>+54 9 ...</strong></p>
+  <!-- Precios -->
+  <section id="precios" class="py-12 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6 text-center">Precios</h3>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white border border-gray-200 rounded-lg shadow">
+          <thead class="bg-blue-600 text-white">
+            <tr>
+              <th class="py-3 px-4 text-left">Tipo de estadía</th>
+              <th class="py-3 px-4 text-left">Precio</th>
+              <th class="py-3 px-4 text-left">Incluye</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-700">
+            <tr class="border-t">
+              <td class="py-3 px-4">Por noche</td>
+              <td class="py-3 px-4">$15.000</td>
+              <td class="py-3 px-4">WiFi, TV, aire acondicionado, cocina equipada</td>
+            </tr>
+            <tr class="border-t">
+              <td class="py-3 px-4">Por semana</td>
+              <td class="py-3 px-4">$90.000</td>
+              <td class="py-3 px-4">Limpieza incluida, cambio de sábanas</td>
+            </tr>
+            <tr class="border-t">
+              <td class="py-3 px-4">Por mes</td>
+              <td class="py-3 px-4">$300.000</td>
+              <td class="py-3 px-4">Todos los servicios incluidos, limpieza semanal</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Homestay La Reinamora - Todos los derechos reservados</p>
-  </footer>
+  <!-- Ubicación -->
+  <section id="ubicacion" class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-2xl font-bold mb-6">Ubicación</h3>
+      <p class="mb-4">Nos encontramos en calle La Reinamora 460, San Salvador de Jujuy.</p>
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe class="w-full h-96 border-0 rounded-lg shadow" loading="lazy" allowfullscreen
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.802093028076!2d-65.31061782462345!3d-24.197305378378325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941c2d75d942afed%3A0x7bffcadff2c4b1c9!2sLa%20Reinamora%20460%2C%20Y4600JHF%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1715000000000"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-12 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6 text-center">Contacto</h3>
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSeEjemploDeFormularioGoogle/viewform" method="POST" target="_blank" class="grid grid-cols-1 gap-6 bg-white p-6 rounded-lg shadow">
+        <input name="entry.1234567890" type="text" placeholder="Nombre" class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <input name="entry.2345678901" type="email" placeholder="Correo electrónico" class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <textarea name="entry.3456789012" placeholder="Mensaje" rows="4" class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Enviar mensaje</button>
+      </form>
+      <div class="text-center mt-6 text-gray-700">
+        <p><strong>Teléfono:</strong> +54 388 123 4567</p>
+        <p><strong>Correo:</strong> contacto@lareinamora.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calendario de Disponibilidad -->
+  <section id="calendario" class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-6 text-center">Calendario de Disponibilidad</h3>
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe src="https://calendar.google.com/calendar/embed?src=tu_correo%40gmail.com&ctz=America%2FArgentina%2FJujuy" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
