@@ -1,122 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homestay La Reinamora</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#554536">
+<meta name="description" content="La Reinamora monoambientes equipados en San Salvador de Jujuy. ConsultÃ¡ tarifas y reservÃ¡ por WhatsApp.">
+<title>La Reinamora Monoambientes | Tu lugar de descanso en Jujuy</title>
+<style>
+:root{--earth:#554536;--earth-dark:#33291f;--sand:#f5f0e7;--cream:#fffdf8;--olive:#687254;--gold:#c5a46a;--text:#2e2a25;--muted:#70685f;--line:#e4dbce;--wa:#218653}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit}.wrap{width:min(1140px,92%);margin:auto}.topbar{background:var(--earth-dark);color:#fff;padding:9px 0;font-size:.88rem;text-align:center}.nav{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:17px 0}.brand{font-family:Georgia,serif;font-size:1.45rem;line-height:1.15;font-weight:700;color:var(--earth);text-decoration:none}.brand small{display:block;font:500 .72rem system-ui;letter-spacing:.13em;text-transform:uppercase;color:var(--olive);margin-top:5px}.navlinks{display:flex;gap:22px;align-items:center}.navlinks a{text-decoration:none;font-size:.94rem}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--wa);color:#fff;text-decoration:none;border:0;border-radius:999px;padding:13px 21px;font-weight:700;box-shadow:0 6px 18px #21865326;transition:transform .2s,filter .2s}.btn:hover{filter:brightness(.94);transform:translateY(-1px)}.btn.secondary{background:transparent;color:var(--earth);border:1px solid #c9bca9;box-shadow:none}.hero{background:linear-gradient(90deg,rgba(36,29,22,.78),rgba(36,29,22,.25)),url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85') center/cover;min-height:560px;display:flex;align-items:center;color:white}.hero-content{max-width:690px;padding:75px 0}.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.18em;font-weight:800;color:#e8d4ad}.hero h1{font:500 clamp(2.6rem,6vw,4.7rem)/1.08 Georgia,serif;margin:16px 0}.hero p{font-size:1.14rem;max-width:560px;color:#f8f2e9}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.hero .secondary{color:white;border-color:#ffffffa6}.trust{background:var(--sand);padding:18px 0}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;text-align:center}.trust-item{font-size:.92rem;font-weight:650;color:var(--earth)}.trust-item span{display:block;font-size:1.35rem;margin-bottom:3px}.section{padding:76px 0}.section.alt{background:var(--sand)}.section-head{text-align:center;max-width:720px;margin:0 auto 35px}.kicker{color:var(--olive);font-size:.76rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.section h2{font:500 clamp(2rem,4vw,3rem)/1.15 Georgia,serif;color:var(--earth);margin:9px 0 14px}.section-head p{color:var(--muted);margin:0}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.photo{margin:0;position:relative;overflow:hidden;border-radius:16px;background:#e8dfd1;min-height:230px}.photo img{width:100%;height:100%;min-height:230px;object-fit:cover;display:block;transition:transform .35s}.photo:hover img{transform:scale(1.035)}.photo figcaption{position:absolute;bottom:0;left:0;right:0;padding:30px 16px 13px;background:linear-gradient(transparent,#201910bb);color:white;font-weight:650}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:white;border:1px solid var(--line);border-radius:16px;padding:23px}.feature .emoji{font-size:1.7rem}.feature h3{font:600 1.22rem Georgia,serif;color:var(--earth);margin:9px 0 5px}.feature p{color:var(--muted);font-size:.95rem;margin:0}.pricing{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}.price-card{background:white;border:1px solid var(--line);border-radius:18px;padding:27px}.price-card.featured{border:2px solid var(--gold);box-shadow:0 14px 35px #493b2610}.price-card h3{font:600 1.45rem Georgia,serif;color:var(--earth);margin:0 0 7px}.price-card .desc{color:var(--muted);font-size:.93rem}.price-row{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.price-row:last-of-type{border-bottom:0}.price-row strong{color:var(--earth);white-space:nowrap}.note{font-size:.86rem;color:var(--muted);margin:16px 0 0}.promo{background:var(--earth);color:white;border-radius:18px;padding:29px;display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:22px}.promo h3{font:500 1.65rem Georgia,serif;margin:0 0 5px}.promo p{margin:0;color:#eee2d3}.promo .btn{flex-shrink:0}.location-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.location-box{background:var(--sand);padding:28px;border-radius:18px}.location-box p{color:var(--muted)}.map{width:100%;height:330px;border:0;border-radius:18px}.contact{background:var(--earth-dark);color:white;padding:65px 0}.contact h2{font:500 clamp(2rem,4vw,3rem) Georgia,serif;margin:0 0 12px}.contact p{color:#e7ddd0;max-width:650px}.contact-grid{display:flex;align-items:center;justify-content:space-between;gap:28px}.contact-info{font-size:.95rem;color:#e7ddd0;margin-top:20px}.contact-info a{color:white}.footer{background:#241d17;color:#cfc4b7;padding:20px 0;font-size:.84rem}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.float-wa{position:fixed;right:20px;bottom:20px;z-index:20;background:var(--wa);color:#fff;text-decoration:none;border-radius:999px;padding:14px 19px;font-weight:800;box-shadow:0 8px 28px #0003}.small{font-size:.82rem;color:var(--muted)}
+@media(max-width:760px){.nav{align-items:flex-start}.navlinks{display:none}.brand{font-size:1.25rem}.hero{min-height:520px}.hero-content{padding:60px 0}.trust-grid{grid-template-columns:repeat(2,1fr);row-gap:20px}.section{padding:55px 0}.gallery{grid-template-columns:repeat(2,1fr)}.photo,.photo img{min-height:180px}.features{grid-template-columns:1fr 1fr}.pricing,.location-grid{grid-template-columns:1fr}.promo,.contact-grid{align-items:flex-start;flex-direction:column}.promo .btn{width:100%}.map{height:270px}.float-wa{right:12px;bottom:12px;padding:12px 15px;font-size:.9rem}}
+@media(max-width:440px){.gallery,.features{grid-template-columns:1fr}.photo,.photo img{min-height:230px}.hero-actions .btn{width:100%}.price-row{font-size:.94rem}.trust-item{font-size:.84rem}}
+</style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <!-- Header -->
-  <header class="bg-white shadow">
-    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-blue-700">Homestay La Reinamora</h1>
-      <nav class="space-x-4">
-        <a href="#galeria" class="text-gray-600 hover:text-blue-600">Galería</a>
-        <a href="#precios" class="text-gray-600 hover:text-blue-600">Precios</a>
-        <a href="#ubicacion" class="text-gray-600 hover:text-blue-600">Ubicación</a>
-        <a href="#contacto" class="text-gray-600 hover:text-blue-600">Contacto</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="bg-blue-100 py-12">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-4">Tu lugar de descanso en San Salvador de Jujuy</h2>
-      <p class="text-lg mb-6">Monoambientes cómodos y totalmente equipados para tu estadía.</p>
-      <a href="#contacto" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">Reservar Ahora</a>
-    </div>
-  </section>
-
-  <!-- Galería de Fotos -->
-  <section id="galeria" class="py-12 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <h3 class="text-2xl font-bold mb-6 text-center">Galería de Fotos</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <img src="https://i.postimg.cc/28VB8wMG/mono1cama.jpg" alt="Monoambiente 1" width="400" class="rounded-lg shadow">
-        <img src="https://i.postimg.cc/B6wsbx19/vistaalapile.jpg" alt="Monoambiente 2" width="400" class="rounded-lg shadow">
-        <img src="https://i.postimg.cc/XY9PmwjN/mono1ba-o.jpg" alt="Baño" class="rounded-lg shadow">
-        <img src="https://i.postimg.cc/pd61nkkZ/mono1cocina.jpg" alt="Cocina" class="rounded-lg shadow">
-        <img src="https://i.postimg.cc/W14n6gdf/pileta.jpg" alt="Fachada" class="rounded-lg shadow">
-        <img src="https://i.postimg.cc/Ssc7NGPj/quincho.jpg" alt="Vista exterior" class="rounded-lg shadow">
-      </div>
-    </div>
-  </section>
-
-  <!-- Precios -->
-  <section id="precios" class="py-12 bg-gray-100">
-    <div class="max-w-4xl mx-auto px-4">
-      <h3 class="text-2xl font-bold mb-6 text-center">Precios</h3>
-      <div class="overflow-x-auto">
-        <table class="min-w-full bg-white border border-gray-200 rounded-lg shadow">
-          <thead class="bg-blue-600 text-white">
-            <tr>
-              <th class="py-3 px-4 text-left">Tipo de estadía</th>
-              <th class="py-3 px-4 text-left">Precio</th>
-              <th class="py-3 px-4 text-left">Incluye</th>
-            </tr>
-          </thead>
-          <tbody class="text-gray-700">
-            <tr class="border-t">
-              <td class="py-3 px-4">Por noche</td>
-              <td class="py-3 px-4">desde $25.000</td>
-              <td class="py-3 px-4">WiFi, TV, aire acondicionado, cocina equipada</td>
-            </tr>
-            <tr class="border-t">
-              <td class="py-3 px-4">Por semana</td>
-              <td class="py-3 px-4">desde $158.000</td>
-              <td class="py-3 px-4">Limpieza incluida, cambio de sábanas</td>
-            </tr>
-            <tr class="border-t">
-              <td class="py-3 px-4">Por mes</td>
-              <td class="py-3 px-4">desde $638.000</td>
-              <td class="py-3 px-4">Todos los servicios incluidos, limpieza semanal</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- Ubicación -->
-  <section id="ubicacion" class="py-12 bg-white">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h3 class="text-2xl font-bold mb-6">Ubicación</h3>
-      <p class="mb-4">Nos encontramos en calle La Reina Mora 460, San Salvador de Jujuy.</p>
-      <div class="aspect-w-16 aspect-h-9">
-        <iframe class="w-full h-96 border-0 rounded-lg shadow" loading="lazy" allowfullscreen
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.802093028076!2d-65.31061782462345!3d-24.197305378378325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941c2d75d942afed%3A0x7bffcadff2c4b1c9!2sLa%20Reina%20Mora%20460%2C%20Y4600JHF%20San%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1715000000000"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contacto" class="py-12 bg-gray-100">
-    <div class="max-w-4xl mx-auto px-4">
-      <h3 class="text-2xl font-bold mb-6 text-center">Contacto</h3>
-      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfs1BFfcLo3yIXk-bj5TALCuHD6ylfuiOMdMuiQh6EZ93g5WA/formResponse" method="POST" target="_blank" class="grid grid-cols-1 gap-6 bg-white p-6 rounded-lg shadow">
-        <input name="entry.2006858769" type="text" placeholder="Nombre" class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-        <input name="entry.189666691" type="email" placeholder="Correo electrónico" class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
-        <textarea name="entry.2066388131" placeholder="Mensaje" rows="4" class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Enviar mensaje</button>
-      </form>
-      <div class="text-center mt-6 text-gray-700">
-        <p><strong>Teléfono:</strong> +54 388 580 3049</p>
-        <p><strong>Correo:</strong> madjujuy2006@gmail.com</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Calendario de Disponibilidad -->
-  <section id="calendario" class="py-12 bg-white">
-    <div class="max-w-4xl mx-auto px-4">
-      <h3 class="text-2xl font-bold mb-6 text-center">Calendario de Disponibilidad</h3>
-      <div class="aspect-w-16 aspect-h-9">
-        <iframe src="https://calendar.google.com/calendar/embed?src=39d772c1527cff44e49ad95b2e8258be28e642fac830c16fb2979ba626759d98%40group.calendar.google.com&ctz=America%2FAraguaina" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-      </div>
-    </div>
-  </section>
-
-</body>
-</html>
+<body>
+<div class="topbar">Alojamiento temporario en San Salvador de Jujuy Â· Consultas y reservas por WhatsApp</div>
+<header class="wrap nav">
+  <a class="brand" href="#inicio">La Reinamora monoambientes<small>Tu lugar de descanso en Jujuy</small></a>
+  <nav class="navlinks" aria-label="NavegaciÃ³n principal">
+    <a href="#alojamiento">El alojamiento</a><a href="#servicios">Servicios</a><a href="#precios">Precios</a><a href="#ubicacion">UbicaciÃ³n</a>
+  </nav>
+  <a class="btn" href="https://wa.me/543885803049?text=Hola%2C%20quiero%20consultar%20por%20La%20Reinamora%20Monoambientes." target="_blank" rel="noopener">Reservar</a>
+</header>
+<main>
+<section class="hero" id="inicio">
+ <div class="wrap"><div class="hero-content">
+  <div class="eyebrow">Descanso Â· Comodidad Â· Jujuy</div>
+  <h1>Sentite como en casa, disfrutÃ¡ Jujuy.</h1>
+  <p>Monoambientes cÃ³modos y totalmente equipados para que disfrutes una estadÃ­a prÃ¡ctica, tranquila y a tu ritmo.</p>
+  <div class="hero-actions">
+   <a class="btn" href="https://wa.me/543885803049?text=Hola%2C%20quiero%20consultar%20disponibilidad%20y%20precios%20en%20La%20Reinamora%20Monoambientes." target="_blank" rel="noopener">Consultar disponibilidad por WhatsApp</a>
+   <a class="btn secondary" href="#alojamiento">Conocer el alojamiento</a>
+  </div>
+ </div></div>
+</section>
+<section class="trust"><div class="wrap trust-grid">
+ <div class="trust-item"><span>âŒ‚</span>Monoambientes equipados</div><div class="trust-item"><span>â™¨</span>Pileta y espacios al aire libre</div><div class="trust-item"><span>âŒ</span>Wi-Fi y TV</div><div class="trust-item"><span>â™¡</span>AtenciÃ³n personalizada</div>
+</div></section>
+<section class="section" id="alojamiento"><div class="wrap">
+ <div class="section-head"><div class="kicker">Bienvenidos</div><h2>Un espacio pensado para descansar</h2><p>En La Reinamora Monoambientes encontrÃ¡s comodidad, equipamiento y espacios para relajarte durante tu visita a San Salvador de Jujuy.</p></div>
+ <div class="gallery">
+  <figure class="photo"><img loading="lazy" src="https://i.postimg.cc/28VB8wMG/mono1cama.jpg" alt="Interior del monoambiente" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80'"><figcaption>Monoambientes cÃ³modos</figcaption></figure>
+  <figure class="photo"><img loading="lazy" src="https://i.postimg.cc/B6wsbx19/vistaalapile.jpg" alt="Vista desde el monoambiente hacia la pileta"><figcaption>Un ambiente acogedor</figcaption></figure>
+  <figure class="photo"><img loading="lazy" src="https://i.postimg.cc/pd61nkkZ/mono1cocina.jpg" alt="Cocina equipada"><figcaption>Cocina equipada</figcaption></figure>
+  <figure class="photo"><img loading="lazy" src="https://i.postimg.cc/XY9PmwjN/mono1ba-o.jpg" alt="BaÃ±o privado"><figcaption>BaÃ±o privado</figcaption></figure>
+  <figure class="photo"><img loading="lazy" src="https://i.postimg.cc/W14n6gdf/pileta.jpg" alt="Pileta exterior"><figcaption>Pileta para disfrutar</figcaption></figure>
+  <figure class="photo"><img loading="lazy" src="https://i.postimg.cc/Ssc7NGPj/quincho.jpg" alt="Quincho con parrilla"><figcaption>Tu lugar de descanso</figcaption></figure>
+ </div>
+ 
+</div></section>
+<section class="section alt" id="servicios"><div class="wrap">
+ <div class="section-head"><div class="kicker">Comodidades</div><h2>Todo lo necesario para tu estadÃ­a</h2><p>Servicios pensados para que viajes liviano y disfrutes con tranquilidad.</p></div>
+ <div class="features">
+  <article class="feature"><div class="emoji">ðŸ³</div><h3>Cocina completa</h3><p>PreparÃ¡ tus comidas con la comodidad de tener tu propio espacio equipado.</p></article>
+  <article class="feature"><div class="emoji">ðŸš¿</div><h3>BaÃ±o privado</h3><p>Privacidad y comodidad durante toda tu estadÃ­a.</p></article>
+  <article class="feature"><div class="emoji">ðŸ“¶</div><h3>Wi-Fi y TV</h3><p>Conectividad y entretenimiento para descansar o seguir conectado.</p></article>
+  <article class="feature"><div class="emoji">â„ï¸</div><h3>Aire acondicionado</h3><p>Un ambiente agradable para disfrutar en cualquier Ã©poca del aÃ±o.</p></article>
+  <article class="feature"><div class="emoji">ðŸŠ</div><h3>Pileta</h3><p>Un espacio para refrescarte y relajarte en los dÃ­as cÃ¡lidos.</p></article>
+  <article class="feature"><div class="emoji">ðŸ”¥</div><h3>Quincho con parrilla</h3><p>Un lugar para compartir buenos momentos al aire libre.</p></article>
+ </div>
+</div></section>
+<section class="section" id="precios"><div class="wrap">
+ <div class="section-head"><div class="kicker">Tarifas orientativas</div><h2>ElegÃ­ la estadÃ­a ideal</h2><p>Tarifas de referencia para un monoambiente para 2 personas. ConsultÃ¡ disponibilidad y precio final segÃºn tus fechas.</p></div>
+ <div class="pricing">
+  <article class="price-card"><h3>Escapada corta</h3><div class="desc">Ideal para una visita breve</div>
+   <div class="price-row"><span>1 noche</span><strong>desde $70.000</strong></div>
+   <div class="price-row"><span>2 a 3 noches</span><strong>desde $55.000 / noche</strong></div>
+   <div class="price-row"><span>4 noches o mÃ¡s</span><strong>desde $51.000 / noche</strong></div>
+  </article>
+  <article class="price-card featured"><h3>EstadÃ­a prolongada</h3><div class="desc">ConsultÃ¡ una tarifa para tu viaje</div>
+   <p>Â¿VenÃ­s por trabajo, estudio, trÃ¡mites o vacaciones? Contanos cuÃ¡ntas noches necesitÃ¡s y te confirmamos la mejor tarifa disponible para esas fechas.</p>
+   <ul><li>Tarifa segÃºn duraciÃ³n y disponibilidad</li><li>Consulta directa y personalizada</li><li>ConfirmaciÃ³n por WhatsApp</li></ul>
+   <a class="btn" href="https://wa.me/543885803049?text=Hola%2C%20quiero%20consultar%20una%20tarifa%20para%20una%20estad%C3%ADa%20prolongada%20en%20La%20Reinamora%20Monoambientes." target="_blank" rel="noopener">Consultar tarifa</a>
+  </article>
+ </div>
+ <p class="note">Los importes son una referencia para 2 personas y pueden variar segÃºn fechas, cantidad de huÃ©spedes y disponibilidad. ConfirmÃ¡ el precio final antes de reservar. No se publican descuentos adicionales sin confirmaciÃ³n del alojamiento.</p>
+ <div class="promo"><div><h3>Â¿Ya tenÃ©s fecha para tu viaje?</h3><p>Escribinos y consultÃ¡ disponibilidad, tarifas y promociones vigentes.</p></div><a class="btn" href="https://wa.me/543885803049?text=Hola%2C%20quiero%20consultar%20precios%20y%20promociones%20vigentes%20en%20La%20Reinamora%20Monoambientes." target="_blank" rel="noopener">Consultar promociones</a></div>
+</div></section>
+<section class="section alt" id="ubicacion"><div class="wrap">
+ <div class="section-head"><div class="kicker">CÃ³mo llegar</div><h2>Te esperamos en Jujuy</h2><p>Encontranos en San Salvador de Jujuy y organizÃ¡ tu llegada con anticipaciÃ³n.</p></div>
+ <div class="location-grid">
+  <div class="location-box"><h3>La Reinamora Monoambientes</h3><p><strong>DirecciÃ³n:</strong><br>La Reina Mora 460, San Salvador de Jujuy, Jujuy, Argentina</p><p><strong>Consultas:</strong><br><a href="tel:+543885803049">+54 9 388 580-3049</a></p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=La+Reina+Mora+460+San+Salvador+de+Jujuy" target="_blank" rel="noopener">Ver ubicaciÃ³n en Google Maps</a></div>
+  <iframe class="map" title="Mapa de ubicaciÃ³n de La Reinamora Monoambientes" loading="lazy" src="https://maps.google.com/maps?q=La%20Reina%20Mora%20460%2C%20San%20Salvador%20de%20Jujuy&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
+ </div>
+</div></section>
+<section class="contact" id="contacto"><div class="wrap contact-grid">
+ <div><div class="eyebrow">Estamos para ayudarte</div><h2>Tu prÃ³xima estadÃ­a empieza acÃ¡.</h2><p>Consultanos las fechas de tu viaje, cuÃ¡ntas personas se alojan y cualquier duda sobre los servicios. Te responderemos por WhatsApp.</p>
+ <div class="contact-info">WhatsApp: <a href="tel:+543885803049">+54 9 388 580-3049</a><br>Email: <a href="mailto:madjujuy2006@gmail.com">madjujuy2006@gmail.com</a></div></div>
+ <a class="btn" href="https://wa.me/543885803049?text=Hola%2C%20quiero%20hacer%20una%20consulta%20para%20alojarme%20en%20La%20Reinamora%20Monoambientes." target="_blank" rel="noopener">âœ† Escribir por WhatsApp</a>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><span>Â© <span id="year">2026</span> La Reinamora Monoambientes</span><span>Tu lugar de descanso en Jujuy</span></div></footer>
+<a class="float-wa" href="https://wa.me/543885803049?text=Hola%2C%20quiero%20consultar%20por%20La%20Reinamora%20Monoambientes." target="_blank" rel="noopener" aria-label="Consultar por WhatsApp">WhatsApp Â· Reservas</a>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
